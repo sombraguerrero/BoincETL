@@ -42,8 +42,9 @@ namespace BoincETL
             {
                 using (MySqlConnection conn = new MySqlConnection(resourceManager.GetString("ConnectionString")))
                 {
-                    using (MySqlCommand mySqlCommand = new MySqlCommand(resourceManager.GetString("DataQuery"), conn))
+                    using (MySqlCommand mySqlCommand = new MySqlCommand("getBoincParams", conn))
                     {
+                        mySqlCommand.CommandType = System.Data.CommandType.StoredProcedure;
                         mySqlCommand.Connection.Open();
                         LoadMaxDates(mySqlCommand);
                         foreach (BoincData item in data)

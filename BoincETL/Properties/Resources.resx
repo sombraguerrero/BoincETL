@@ -120,7 +120,4 @@
   <data name="ConnectionString" xml:space="preserve">
     <value>Server=settersynology;Port=3307;Database=rsetter_db;Uid=rsetter_db;Pwd=RomeoSierra@1985;</value>
   </data>
-  <data name="DataQuery" xml:space="preserve">
-    <value>(SELECT 'D:\\ProgramData\\BOINC\\statistics_boinc.bakerlab.org_rosetta.xml' as 'filename',  MAX(`day`) AS 'LastDates', projectSource FROM boinc_data WHERE projectSource = 'Rosetta') UNION (SELECT 'D:\\ProgramData\\BOINC\\statistics_www.worldcommunitygrid.org.xml', MAX(`day`), projectSource FROM boinc_data WHERE projectSource = 'World Community Grid') UNION (SELECT 'D:\\ProgramData\\BOINC\\statistics_www.gpugrid.net.xml', MAX(`day`), projectSource FROM boinc_data WHERE projectSource = 'GPUGrid')</value>
-  </data>
 </root>

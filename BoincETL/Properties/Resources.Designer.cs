@@ -68,14 +68,5 @@ namespace BoincETL.Properties {
                 return ResourceManager.GetString("ConnectionString", resourceCulture);
             }
         }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to (SELECT &apos;D:\\ProgramData\\BOINC\\statistics_boinc.bakerlab.org_rosetta.xml&apos; as &apos;filename&apos;,  MAX(`day`) AS &apos;LastDates&apos;, projectSource FROM boinc_data WHERE projectSource = &apos;Rosetta&apos;) UNION (SELECT &apos;D:\\ProgramData\\BOINC\\statistics_www.worldcommunitygrid.org.xml&apos;, MAX(`day`), projectSource FROM boinc_data WHERE projectSource = &apos;World Community Grid&apos;) UNION (SELECT &apos;D:\\ProgramData\\BOINC\\statistics_www.gpugrid.net.xml&apos;, MAX(`day`), projectSource FROM boinc_data WHERE projectSource = &apos;GPUGrid&apos;).
-        /// </summary>
-        internal static string DataQuery {
-            get {
-                return ResourceManager.GetString("DataQuery", resourceCulture);
-            }
-        }
     }
 }
