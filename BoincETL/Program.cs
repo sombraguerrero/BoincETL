@@ -51,6 +51,8 @@ namespace BoincETL
                         {
                             LoadData(item.filename, item.lastDay, item.projectSource);
                         }
+
+                        mySqlCommand.CommandType = System.Data.CommandType.Text;
                         mySqlCommand.CommandText = BuildInsert();
                         _ = mySqlCommand.ExecuteNonQuery();
                     }

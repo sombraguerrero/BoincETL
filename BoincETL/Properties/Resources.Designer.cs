@@ -61,7 +61,7 @@ namespace BoincETL.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Server=settersynology;Port=3307;Database=rsetter_db;Uid=rsetter_db;Pwd=RomeoSierra@1985;.
+        ///   Looks up a localized string similar to TELZudHNVI7vaDimCFM8HwWPWW8D5CGWp8yt8EhBQMEiZ/MauizZiNiSm+hf5X5eplZMQfOhGA/iDqpH3DYEpYskqzS1X5lSwbwVgcHXHu/jJNmFTcILElmtfOpRLPJ9Mb9+5BlB66c=.
         /// </summary>
         internal static string ConnectionString {
             get {
