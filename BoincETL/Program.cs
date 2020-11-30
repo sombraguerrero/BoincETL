@@ -3,7 +3,6 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Xml;
-using System.Resources;
 
 namespace BoincETL
 {
@@ -37,10 +36,9 @@ namespace BoincETL
         }
         static void Main(string[] args)
         {
-            ResourceManager resourceManager = new ResourceManager("BoincETL.Properties.Resources", System.Reflection.Assembly.GetExecutingAssembly());
             try
             {
-                using (MySqlConnection conn = new MySqlConnection(resourceManager.GetString("ConnectionString")))
+                using (MySqlConnection conn = new MySqlConnection(Environment.GetEnvironmentVariable("DSConn", EnvironmentVariableTarget.User)))
                 {
                     using (MySqlCommand mySqlCommand = new MySqlCommand("getBoincParams", conn))
                     {
